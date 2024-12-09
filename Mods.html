@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: cursive;
+            margin: 0px 0px 0px 0px;
+            padding: 0px;
+            background-color: rgb(255, 255, 255);
+            background-image: url("c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\bang-banner.webp");
+        }
+        .header {
+            width: 100%;
+            background-color: #000000;
+            color: #777373;
+            padding: 2px 0;
+            text-align: center;
+             
+        }
+        .header img{
+           max-width:100% ; 
+            height: 600px;
+        }
+        #outerbox {
+            overflow: hidden;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center;
+            width: 40px;
+            margin: 50px auto;
+
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color:rgb(255, 255, 255);
+            background-repeat: repeat;
+            background-position: center;
+        }
+        .nav a {
+            color: #000000;
+            padding: 10px 10px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+            background-color: rgb(0, 0, 0);
+            padding: 5px;
+        }
+       
+        .gallery {
+            perspective: 1000px;
+            padding: 70px;
+        }
+
+        .gallery-container {
+            width: 300px;
+            height: 300px;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: rotate 6s infinite linear;
+            gap: 10px;
+        }
+        .nav {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(104, 103, 103);
+        }
+        .gallery-image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            
+        }
+
+        .gallery-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gallery-image:nth-child(1) {
+            transform: rotateY(0deg);
+        }
+
+        .gallery-image:nth-child(2) {
+            transform: rotateY(90deg);
+        }
+
+        .gallery-image:nth-child(3) {
+            transform: rotateY(180deg);
+        }
+
+        .gallery-image:nth-child(4) {
+            transform: rotateY(270deg);
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotateY(0deg);
+            }
+
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+
+        .thumbnail-gallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .thumbnail {
+            overflow: hidden;
+            border-radius: 8px;
+            transition: transform 0.3s;
+            width: 200px;
+            height: 205px;
+            position: relative;
+        }
+
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .thumbnail:hover {
+            transform: scale(1.1);
+        }
+
+        .description {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(56, 52, 52, 0.7);
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 10px;
+            padding: 3px;
+            opacity: 0;
+            transition: opacity 0.1s;
+        }
+        .thumbnail:hover .description {
+            opacity: 1;
+        }
+    </style>
+</head>
+<div class="header">
+    <h2>WELLCOME TO VIN'S SMOKE PRODUCTS</h2>
+    <img src="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\giphy.gif">
+    <h1><div>PARTS OF VAPES AND VAPE MOD</div></h1>
+</div>
+<div class="nav">
+    <a href="index.html">HOME</a>
+    <a href="Dispo.html">PRODUCTS 1</a>
+    <a href="Mods.html">PRODUCTS 2</a>
+    <a href="WEBSITE (LOG IN).html">LOG-IN</a>
+    <a href="PORTFOLIO(ABOUT).html">ABOUT</a>
+</div>
+<body>
+    <div class="gallery">
+        <div class="gallery-container">
+            <div class="gallery-image"><img src="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\New folder\Drag4KitGallery.webp" alt="image 1"></div>
+            <div class="gallery-image"><img src="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\New folder\SMOK RPM80 Pro POD Mod Kit.webp" alt="image 2"></div>
+            <div class="gallery-image"><img src="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\New folder\yocan-kodo_battery_580x.webp" alt="image 3"></div>
+            <div class="gallery-image"><img src="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\New folder\OXVA XLIM SQ PRO POD.jfif" alt="image 4"></div>
+        </div>
+     </div>
+     <div class="thumbnail-gallery">
+        <div class="thumbnail">
+            <a href="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\Vape website Project\LAB ACT 30 ITEMS 1st.html"><img src="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\New folder\k-vape_pro-black-mp.webp" alt="thumbnail 1"></a>
+        <div class="description">K VAPE PRO BLACK MOUTHPIECE</div>
+        </div>
+        <div class="thumbnail">
+            <a href="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\Vape website Project\LAB ACT 30 ITEMS 2nd.html"><img src="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\New folder\41WLqs0G8VL._AC_SL1000_.webp" alt="thumbnail 1"></a>
+        <div class="description">VAPE COIL</div>
+        </div>
+        <div class="thumbnail">
+            <a href="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\Vape website Project\LAB ACT 30 ITEMS 3nd.html"><img src="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\30 ITEMS\JWNElfBar500MatePod10.webp" alt="thumbnail 3"></a>
+        <div class="description">ELFBAR BATERRY</div>
+        </div>
+        <div class="thumbnail">
+            <a href="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\Vape website Project\LAB ACT 30 ITEMS 4rth.html"><img src="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\New folder\6.png" alt="thumbnail 4"></a>
+            <div class="description">18650 BATTERY</div>
+            </div>
+        <div class="thumbnail">
+            <a href="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\Vape website Project\LAB ACT 30 ITEMS 5TH.html"><img src="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\New folder\yocan-kodo_battery_580x.webp" alt="thumbnail 5"></a>
+            <div class="description">YOCAN CODO BATTERY</div>
+        </div>
+        <div class="thumbnail">
+            <a href="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\Vape website Project\LAB ACT 30 ITEMS 6TH.html"><img src="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\New folder\Wotofo-MDura-Mini-80W-Mod-Kit-with-nexMINI-Sub-Ohm-Tank-5_1024x.webp" alt="thumbnail 6"></a>
+            <div class="description">WOTOFO-MDURA-Mini-80W-Mod-Kit</div>
+        </div>
+        <div class="thumbnail">
+            <a href="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\Vape website Project\LAB ACT 30 ITEMS 7TH.html"><img src="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\New folder\Drag4KitGallery.webp" alt="thumbnail 7"></a>
+            <div class="description">DRAG4KIT MOD</div>
+        </div>
+        <div class="thumbnail">
+            <a href="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\Vape website Project\LAB ACT 30 ITEMS 8TH.html"><img src="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\New folder\Geekvape-T200-Aegis-Touch-Box-Mod-kit-8-634322_1024x.webp" alt="thumbnail 8"></a>
+            <div class="description">Geekvape-T200-Aegis-Touch-Box-Mod-kit</div>
+        </div>
+        <div class="thumbnail">
+            <a href="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\Vape website Project\LAB ACT 30 ITEMS 9TH.html"><img src="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\New folder\GeekVape-Aegis-Legend-3-Mod-Kit.webp" alt="thumbnail 9"></a>
+            <div class="description">GeekVape-Aegis-Legend-3-Mod-Kit</div>
+        </div>
+        <div class="thumbnail">
+            <a href="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\Vape website Project\LAB ACT 30 ITEMS 10TH.html"><img src="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\New folder\smok-mag-225w-box-mod-starter-kit-a21428-750x930.jpg" alt="thumbnail 10"></a>
+            <div class="description">Smoke Mag 225</div>
+        </div>
+        <div class="thumbnail">
+            <a href="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\Vape website Project\LAB ACT 30 ITEMS 11TH.html"><img src="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\New folder\voopoo-drag-s-pro-80w-pod-kit-3000mah-mystic-red-32112399745179_480x.webp" alt="thumbnail 11"></a>
+            <div class="description">Voopoo Drag S pro 80W POD kit</div>
+        </div>
+        <div class="thumbnail">
+            <a href="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\Vape website Project\LAB ACT 30 ITEMS 12TH.html"><img src="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\New folder\SMOK RPM 5 PRO 80W POD MOD KIT.webp" alt="thumbnail 12"></a>
+            <div class="description">SMOK RPM 5 PRO 80W POD MOD KIT</div>
+        </div>
+        <div class="thumbnail">
+            <a href="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\Vape website Project\LAB ACT 30 ITEMS 13TH.html"><img src="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\New folder\SMOK RPM80 Pro POD Mod Kit.webp" alt="thumbnail 13"></a>
+            <div class="description">SMOK RPM80 Pro POD Mod Kit</div>
+        </div>
+        <div class="thumbnail">
+            <a href="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\Vape website Project\LAB ACT 30 ITEMS 14TH.html"><img src="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\New folder\OXVA XLIM SQ PRO POD.jfif" alt="thumbnail 14"></a>
+            <div class="description">OXVA XLIM SQ PRO POD</div>
+        </div>
+        <div class="thumbnail">
+            <a href="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\Vape website Project\LAB ACT 30 ITEMS 15TH.html"><img src="c:\Users\ASUS\Documents\MY WEBSITE(SOAP)\New folder\SMOK-RPM-80-Pro-Mod-Kit.jpg" alt="thumbnail 15"></a>
+            <div class="description">SMOK-RPM-80-Pro-Mod-Kit</div>
+        </div>
+        

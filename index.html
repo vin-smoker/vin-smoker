@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slideshow</title>
+    <style>
+        body {
+            font-family: cursive;
+            margin: 0px 0px 0px 0px;
+            padding: 0px;
+            background-color: rgb(255, 255, 255);
+        }
+        .header {
+            background-color: #000000;
+            color: #777373;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2px;
+        }
+        .header img {
+            width: 90px;
+            height: 90px;
+        }
+        .center-text {
+    text-align: center;
+    font-size: 18px;
+}
+
+        #outerbox {
+            overflow: hidden;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center;
+            width: 450px;
+            margin: 50px auto;
+        }
+        #sliderbox {
+            position: relative;
+            display: flex;
+            width: 450px;
+            height: 450px;
+            animation: slider 16s infinite;
+            background-color: aliceblue;
+        }
+
+        @keyframes slider {
+
+            0%,
+            10% {
+                left: 0;
+            }
+
+            12.5%,
+            22.5% {
+                left: -450px;
+            }
+
+            25%,
+            35% {
+                left: -900px;
+            }
+
+            37.5%,
+            47.5% {
+                left: -1350px;
+            }
+
+            50%,
+            60% {
+                left: -1800px;
+            }
+
+            62.5%,
+            72.5% {
+                left: -2250px;
+            }
+
+            75%,
+            85% {
+                left: -2700px;
+            }
+
+            87.5%,
+            96.5% {
+                left: -3150px;
+            }
+
+            100% {
+                left: -3600px;
+            }
+        }
+
+        #sliderbox img {
+            width: 450px;
+            height: 450px;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(104, 103, 103);
+        }
+        .nav a {
+            color: #fcfbfb;
+            padding: 3px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .nav a:hover {
+            background-color: #1e1f1e;
+        }
+        .main {
+            padding: 50px;
+            text-align: center;
+        }
+        .footer {
+            background-color: #070707;
+            color: #ece9e9;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+        .content {
+            width: 10%;
+            height: 7px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+       <img src="462541828_8653403068087853_8856141313793817635_n (1).jpg"
+       alt="Logo">
+    <h1>WELLCOME TO VIN'S SMOKE</h1> 
+    </div>
+    <div class="nav">
+        <a href="index.html">HOME</a>
+        <a href="Dispo.html">PRODUCTS 1</a>
+        <a href="Mods.html">PRODUCTS 2</a>
+        <a href="WEBSITE (LOG IN).html">LOG-IN</a>
+        <a href="PORTFOLIO(ABOUT).html">ABOUT</a>
+    </div>
+    <div class="main">
+        
+    </div>
+
+    <div id="outerbox">
+        <div id="sliderbox">
+            <img src="OXVA-XLIM-600-disposable-Engangsvape-20mg-Strawberry-Mango.jpg"/>
+            <img src="9_30_2024OXBARMINI2200Disposable0_NICOTINEFREE40.webp"/>
+            <img src="s-l1200.png"/>
+            <img src="ELFBARFB1000-GROUP72FLkopieren.webp"/>
+            <img src="elfbar_-_bc5000_-_disposables_-_default__23102.webp"/>
+            <img src="raz6_1024x1024.webp"/>
+            <img src="Rechargeable-Disposable-Vape.webp"/>
+            <img src="group-image--instafill-rechargeable-disposable-vape-kit.webp"/>
+            <img src="images (41).jfif"/>
+            <img src="images (32).jfif"/>
+            <img src="images (35).jfif"/>
+            <img src="hayati-pro-max-4000-puffs-disposable-vape.jpg"/>
+        </div>
+        <div class="center-text">
+           <h5>Explore our collection today and discover incredible flavors, long-lasting devices, and convenient, hassle-free vaping</h5>
+        </div>
+    </div>
